@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        body{
+            padding-top: 50px
+        }
+
+        input[type=checkbox]:checked + label.form-check-label {
+            text-decoration: line-through;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            height: 45px;
+            padding: 5px;
+            list-style-position: inside;
+            border-bottom: 1px solid gray   ;
+        }
+        
+        button{
+            float: right;
+        }
+        
+    </style>
+    <title>Shopping List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <form>
+
+                    <h3>Shopping list</h3>
+                    <!--Input field and Add button-->
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="item" placeholder="Here type item you want to add" aria-label="Here type an item you want to add" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                        <button class="btn btn-outline-info" onclick="addItem()" type="button">Add</button>
+                        </div>
+                    </div><br>
+                    
+                </form>
+                <ul id="list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="shopping.js"></script>
+</body>
+</html>
